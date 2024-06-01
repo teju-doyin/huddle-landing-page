@@ -6,6 +6,7 @@
 }
 
 body {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,6 +21,7 @@ body img {
 
 .body-container {
   width: 90%;
+  overscroll-behavior-y: none;
   max-width: 500px;
   margin: 0 auto;
   color: white;
@@ -80,13 +82,16 @@ body img {
 }
 
 @media screen and (min-width: 780px) {
+  body {
+    background-image: url("images/bg-desktop.svg");
+  }
   .body-container {
-    max-width: 1000px;
+    max-width: 1100px;
   }
   .body-container .right {
     display: flex !important;
     flex-direction: row;
-    gap: 2rem;
+    gap: 3rem;
   }
   .body-container .illustration {
     width: 55% !important;

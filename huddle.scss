@@ -5,7 +5,7 @@
  font-family: "Poppins", sans-serif;
 }
 body{
-    // height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@ body{
 }
 .body-container{
     width: 90%;
-    
+    overscroll-behavior-y: none;
     max-width: 500px;
     margin: 0 auto ;
     color: white;
@@ -82,15 +82,19 @@ body{
     }
 }
 @media screen and (min-width: 780px) {
+    body{
+        background-image: url('images/bg-desktop.svg');
+
+    }
     .body-container {
-      max-width: 1000px;
+      max-width: 1100px;
     //   background-color: green;
       
       .right{
         // background-color: pink;
         display: flex !important;
         flex-direction: row;
-        gap: 2rem;
+        gap: 3rem;
       }
       .illustration{
         width:  55% !important;
