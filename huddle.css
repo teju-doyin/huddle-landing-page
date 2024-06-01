@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-color: hsl(257, 40%, 49%);
+}
+body img {
+  max-width: 100%;
+}
+
+.body-container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  color: white;
+}
+.body-container .logo {
+  width: 50%;
+  max-width: 20rem;
+  margin-bottom: 2rem;
+}
+.body-container main {
+  margin-bottom: 4rem;
+}
+.body-container main .illustration {
+  margin-bottom: 2rem;
+}
+.body-container main .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.body-container main span {
+  display: block;
+}
+.body-container main h2, .body-container main p {
+  margin-bottom: 1.5rem;
+}
+.body-container main button {
+  border: none;
+  cursor: pointer;
+  color: hsl(257, 40%, 49%);
+  padding: 0.8rem 4rem;
+  border-radius: 2rem;
+  text-align: center !important;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.75);
+}
+.body-container main button:hover {
+  color: white;
+  transition-duration: 300ms;
+  background-color: hsl(300, 69%, 71%);
+}
+.body-container footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.body-container footer img {
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.body-container footer img:hover {
+  color: hsl(300, 69%, 71%);
+  transition-duration: 300ms;
+  border-color: hsl(300, 69%, 71%);
+}
+
+@media screen and (min-width: 780px) {
+  .body-container {
+    max-width: 1000px;
+  }
+  .body-container .right {
+    display: flex !important;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .body-container .illustration {
+    width: 55% !important;
+  }
+  .body-container .text {
+    display: flex;
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+  .body-container button {
+    width: 50%;
+    max-width: 10rem;
+    text-align: center !important;
+    padding: 0.5rem !important;
+  }
+  .body-container footer {
+    justify-content: flex-end;
+  }
+}/*# sourceMappingURL=huddle.css.map */
